@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  frame:
+    image: frame:foto
+    restart: unless-stopped
+    ports:
+      - 9900:9900
+    volumes:
+      - "/home/pi/divyank/slideshow/pictures:/usr/src/images"
